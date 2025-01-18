@@ -1,8 +1,8 @@
 {
-  "name": "Climate Controllers implementations",
+  "name": "Raspberry Pi Climate Controller implementations",
   "zip_release": true,
   "hide_default_branch": true,
-  "filename": "climate_controllers.zip",
+  "filename": "pigpio_thermostat.zip",
   "render_readme": true,
   "homeassistant": "2022.5.0"
 }
