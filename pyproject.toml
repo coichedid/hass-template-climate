@@ -1,6 +1,6 @@
 [project]
-name = "hass-template-climate"
-version = "0.0.0"
+name = "hass-template-climate-ir-tuya-UC"
+version = "0.0.1"
 description = ""
 readme = "README.md"
 requires-python = ">=3.12"
