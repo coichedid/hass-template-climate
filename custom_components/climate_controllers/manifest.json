@@ -1,6 +1,6 @@
 {
-  "domain": "climate_components",
-  "name": "Climate Components",
+  "domain": "pigpio_thermostat",
+  "name": "Climate Raspberry PI GPio thermostat",
   "codeowners": ["@coichedid"],
   "dependencies": ["template"],
   "documentation": "https://github.com/coichedid/hass-template-climate",
