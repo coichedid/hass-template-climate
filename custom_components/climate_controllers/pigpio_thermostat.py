@@ -55,7 +55,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     temp_controller_entity_id = config.get(CONF_TEMP_CONTROLLER)
     sensor_entity_id = config.get(CONF_SENSOR)
     service_temp_controller = config.get(CONF_SRV_TEMP_CONTROLLER)
-
+    _LOGGER.info("Doing setup_platform")
     add_devices(
         [
             PiGPioThermostat(
@@ -137,6 +137,9 @@ class PiGPioThermostat(ClimateDevice):
 
     def _sensor_changed(self, entity_id, old_state, new_state):
         """Called when temperature changes."""
+
+        _ = entity_id
+        _ = old_state
         if new_state is None:
             return
 
