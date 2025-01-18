@@ -1,5 +1,5 @@
 [project]
-name = "hass-template-climate-ir-tuya-UC"
+name = "hass-climate-controllers"
 version = "0.0.1"
 description = ""
 readme = "README.md"

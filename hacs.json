@@ -1,8 +1,8 @@
 {
-  "name": "Template Climate For IR Tuya Universal Controller",
+  "name": "Climate Controllers implementations",
   "zip_release": true,
   "hide_default_branch": true,
-  "filename": "climate_template_ir_tuya.zip",
+  "filename": "climate_controllers.zip",
   "render_readme": true,
   "homeassistant": "2022.5.0"
 }
