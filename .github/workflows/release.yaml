@@ -51,4 +51,4 @@ jobs:
           SEMANTIC_RELEASE_CMD_PREPARE: |
             yq -i '.version = "${nextRelease.version}"' manifest.json
             zip climate_controllers.zip -r ./
-          SEMANTIC_RELEASE_GITHUB_ASSETS: "climate_template.zip"
+          SEMANTIC_RELEASE_GITHUB_ASSETS: "climate_controllers.zip"
