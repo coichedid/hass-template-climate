@@ -23,7 +23,7 @@ on:
 
 defaults:
   run:
-    working-directory: custom_components/climate_controllers
+    working-directory: custom_components/pigpio_thermostat
 
 jobs:
   publish:
@@ -50,5 +50,5 @@ jobs:
           SEMANTIC_RELEASE_FORCE_RELEASE: ${{ inputs.release_type }}
           SEMANTIC_RELEASE_CMD_PREPARE: |
             yq -i '.version = "${nextRelease.version}"' manifest.json
-            zip climate_controllers.zip -r ./
-          SEMANTIC_RELEASE_GITHUB_ASSETS: "climate_controllers.zip"
+            zip pigpio_thermostat.zip -r ./
+          SEMANTIC_RELEASE_GITHUB_ASSETS: "pigpio_thermostat.zip"
