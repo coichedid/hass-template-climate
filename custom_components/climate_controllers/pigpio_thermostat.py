@@ -98,6 +98,7 @@ class PiGPioThermostat(ClimateDevice):
         sensor_state = hass.states.get(sensor_entity_id)
         if sensor_state:
             self._update_temp(sensor_state)
+        _LOGGER.info("Did initialization")
 
     @property
     def should_poll(self):
@@ -143,6 +144,7 @@ class PiGPioThermostat(ClimateDevice):
         if new_state is None:
             return
 
+        _LOGGER.info("New tempeture, need refresh")
         self._update_temp(new_state)
         self._control_heating()
         self.schedule_update_ha_state()
