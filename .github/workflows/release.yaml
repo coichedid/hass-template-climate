@@ -23,7 +23,7 @@ on:
 
 defaults:
   run:
-    working-directory: custom_components/climate_template
+    working-directory: custom_components/climate_controllers
 
 jobs:
   publish:
