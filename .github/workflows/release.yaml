@@ -43,7 +43,7 @@ jobs:
           node-version: lts/*
 
       - name: "Release Package 📦"
-        run: corepack enable && pnpm dlx @jcwillox/semantic-release-config
+        run: corepack enable && pnpm dlx @coichedid/semantic-release-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SEMANTIC_RELEASE_GITHUB_DRAFT: ${{ inputs.draft }}
