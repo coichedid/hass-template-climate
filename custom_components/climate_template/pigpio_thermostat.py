@@ -35,9 +35,9 @@ CONF_SRV_TEMP_CONTROLLER = 'fan_service_controller'
 CONF_FAN_MODE_LIST = 'fan_modes'
 default_fan_mode_list = [
                 FAN_OFF,
-                FAN_DIFFUSE, 
-                FAN_LOW, 
-                FAN_MEDIUM, 
+                FAN_DIFFUSE,
+                FAN_LOW,
+                FAN_MEDIUM,
                 FAN_HIGH]
 
 
@@ -79,7 +79,7 @@ class PiGPioThermostat(ClimateDevice):
         self._cur_operation = None
         self._attr_fan_mode = None
         self._fan_mode_id = 0
-        
+
         self._unit = hass.config.units.temperature_unit
 
         track_state_change(hass, sensor_entity_id, self._sensor_changed)
@@ -107,7 +107,7 @@ class PiGPioThermostat(ClimateDevice):
     def current_temperature(self):
         """Return the sensor temperature."""
         return self._cur_temp
-    
+
     @property
     def current_fan_mode(self):
         """Return the fan mode."""
@@ -153,7 +153,7 @@ class PiGPioThermostat(ClimateDevice):
             fan_mode = 3 #medium
         elif 70 <= self._cur_temp:
             fan_mode = 4 #high
-        
+
         self.hass.services.call(
             "pyscript",
             "change_GPio_fan_mode",
